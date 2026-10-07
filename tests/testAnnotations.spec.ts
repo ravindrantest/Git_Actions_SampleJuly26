@@ -19,6 +19,8 @@ test("Test Annotation to learn test.skip", async ({ page }) => {
     await page.locator('.decorativeSubmit').click();
 
     await page.locator('//a[contains(text(),"CRM")]').click()
+
+    await page.waitForTimeout(3000)
 })
 
 test.fixme("Test Annotation to learn test.fixme", async ({ page }) => {
@@ -34,6 +36,8 @@ test.fixme("Test Annotation to learn test.fixme", async ({ page }) => {
     await page.locator('.decorativeSub').click();
 
     await page.locator('//a[contains(text(),"CRM")]').click()
+
+    console.log("Test is annotated with fixme because the automation is flaky or doesn't work as expected");``
 })
 
 // test.fail("Test Annotation to learn test.fail", async ({ page }) => {
