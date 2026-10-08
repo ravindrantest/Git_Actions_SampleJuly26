@@ -22,6 +22,8 @@ test("Test Annotation to learn test.skip", async ({ page }) => {
 
     await page.waitForTimeout(3000)
 
+    console.log("Changes for s critical bug has been fixed and the test.skip annotation is removed from the test case");
+
 })
 
 
