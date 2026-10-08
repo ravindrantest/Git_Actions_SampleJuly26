@@ -21,7 +21,10 @@ test("Test Annotation to learn test.skip", async ({ page }) => {
     await page.locator('//a[contains(text(),"CRM")]').click()
 
     await page.waitForTimeout(3000)
+
+    console.log("Trying git stash in main branch to save the changes and then git pull to get the latest changes from remote repository");
 })
+
 
 test.fixme("Test Annotation to learn test.fixme", async ({ page }) => {
 
